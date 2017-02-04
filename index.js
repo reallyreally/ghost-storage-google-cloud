@@ -58,7 +58,7 @@ ghostStorageGoogleCloud.prototype.save = function(image) {
 			validation: 'crc32c',
 			public: true,
 			metadata: {
-				articleID: articleID
+				ghostBlog: 'media'
 			}
 		};
 		return new Promise(function(resolve, reject) {
@@ -88,7 +88,7 @@ ghostStorageGoogleCloud.prototype.serve = function() {
 
 ghostStorageGoogleCloud.prototype.exists = function(filename) {
 	return new Promise(function(resolve) {
-		var file = this.bucket.file(filename);
+		var file = bucket.file(filename);
 		file.exists().then(function(data) {
 			var exists = data[0];
 			resolve(exists);
@@ -98,7 +98,7 @@ ghostStorageGoogleCloud.prototype.exists = function(filename) {
 
 ghostStorageGoogleCloud.prototype.delete = function(filename) {
 	return new Promise(function(resolve, reject) {
-		var file = this.bucket.file(filename);
+		var file = bucket.file(filename);
 		file.delete(function(err, apiResponse) {
 			if (err) {
 				return reject(err);
