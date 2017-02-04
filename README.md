@@ -5,7 +5,7 @@ Can be used outside of App Engine with a security json file.
 
 ## Installation
 
-    npm install --save @aicial/ghost-stoage-google-cloud
+    npm i @aicial/ghost-storage-google-cloud --save
 
 ## Create storage module
 
