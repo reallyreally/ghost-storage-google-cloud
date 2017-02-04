@@ -1,6 +1,6 @@
 {
   "name": "@aicial/ghost-storage-google-cloud",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Provides Google Cloud Storage (Buckets) support for Ghost",
   "main": "index.js",
   "scripts": {
