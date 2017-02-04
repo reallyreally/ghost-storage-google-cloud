@@ -46,9 +46,9 @@ ghostStorageGoogleCloud.prototype.save = function(image) {
 	var targetDir = _self.getTargetDir();
 
 	if (options.customURL !== undefined) {
-		var storageURL = options.customURL.replace(/\/+$/, '') + '/'
+		var storageURL = options.customURL.replace(/\/+$/, '') + '/';
 	} else {
-		var storageURL = 'https://' + options.bucket + '.storage.googleapis.com/',
+		var storageURL = 'https://' + options.bucket + '.storage.googleapis.com/';
 	}
 
 	return this.getUniqueFileName(this, image, targetDir).then(function(filename) {
