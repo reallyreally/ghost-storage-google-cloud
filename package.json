@@ -1,0 +1,41 @@
+{
+  "name": "ghost-storage-google-cloud",
+  "version": "0.0.1",
+  "description": "Provides Google Cloud Storage (Buckets) support for Ghost",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aicial/ghost-storage-google-cloud.git"
+  },
+  "keywords": [
+    "ghost",
+    "google",
+    "cloud storage",
+    "gcloud",
+    "plugin"
+  ],
+  "author": "Troy Kelly <troy.kelly@aicial.com> (https://aicial.com/)",
+  "contributors": [
+    {
+      "name": "Daniel Walton",
+      "email": "daniel.walton@aicial.com"
+    },
+    {
+      "name": "Matthew Compton",
+      "email": "matthew.compton@aicial.com"
+    }
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/aicial/ghost-storage-google-cloud/issues"
+  },
+  "homepage": "https://github.com/aicial/ghost-storage-google-cloud#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^0.7.0",
+    "bluebird": "^3.4.7",
+    "util": "^0.10.3"
+  }
+}
