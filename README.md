@@ -17,7 +17,7 @@ As well as installing the NPM package, you will need to create a storage plugin 
 If you don't want to do it that way - you need to end up with the content below in "content/storage/gcs/index.js"
 
     'use strict';
-    module.exports = require(ghost-storage-google-cloud);
+    module.exports = require('ghost-storage-google-cloud');
 
 ## Configuration
 
