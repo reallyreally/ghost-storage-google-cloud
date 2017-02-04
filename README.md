@@ -12,12 +12,12 @@ Can be used outside of App Engine with a security json file.
 As well as installing the NPM package, you will need to create a storage plugin within Ghost. From the root of your Ghost blog:
 
     mkdir -p ./content/storage/gcs
-    echo -en \''use strict'\'';\nmodule.exports = require('\''ghost-storage-google-cloud'\'');\n' > ./content/storage/gcs/index.js
+    echo -en \''use strict'\'';\nmodule.exports = require('\''@aicial/ghost-storage-google-cloud'\'');\n' > ./content/storage/gcs/index.js
 
 If you don't want to do it that way - you need to end up with the content below in "content/storage/gcs/index.js"
 
     'use strict';
-    module.exports = require('ghost-storage-google-cloud');
+    module.exports = require('@aicial/ghost-storage-google-cloud');
 
 ## Configuration
 
