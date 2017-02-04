@@ -9,8 +9,8 @@
 
 var Promise = require('bluebird'),
 	util = require('util'),
-	baseStore = require('../../core/server/storage/base'),
-	errors = require('../../core/server/errors'),
+	baseStore = require('../../../core/server/storage/base'),
+	errors = require('../../../core/server/errors'),
 	options = {},
 	bucket;
 
