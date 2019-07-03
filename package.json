@@ -4,7 +4,9 @@
   "description": "Provides Google Cloud Storage (Buckets) support for Ghost",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -30,7 +32,9 @@
   "dependencies": {
     "@google-cloud/storage": "^0.7.0",
     "bluebird": "^3.4.7",
-    "util": "^0.10.3"
+    "util": "^0.10.3",
+    "snyk": "^1.189.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
