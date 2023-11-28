@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/aicial/ghost-storage-google-cloud#readme",
   "dependencies": {
-    "@google-cloud/storage": "^0.7.0",
+    "@google-cloud/storage": "^2.4.3",
     "bluebird": "^3.4.7",
     "util": "^0.10.3"
   },
